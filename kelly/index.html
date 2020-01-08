@@ -6,15 +6,15 @@
   
   <title>凯利公式 | 新&amp;心</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） 1投资比例 &#x3D; 预期收益率 &#x2F; (Rw * Rl) &#x3D; (Rw*赢的概率 - Rl*输的概率) &#x2F; (Rw * Rl)  例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 $(20.5-10.5)&#x2F;(2*1) &#x3D; 0.25$ 另：赌博中术语，赔率 &#x3D; Rw &#x2F; Rl 凯利公式的推导假设本金为W0，n次抽样的增长倍数分别为M">
+  <meta name="description" content="设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） 1投资比例 &#x3D; 预期收益率 &#x2F; (Rw * Rl) &#x3D; (Rw*赢的概率 - Rl*输的概率) &#x2F; (Rw * Rl) 例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 \((2*0.5-1*0.5)&#x2F;(2*1) &#x3D; 0.25\) 另：赌博中术语，赔率 &#x3D; Rw &#x2F; Rl 凯利公式的推导 假设本金为W0，n次抽样的增长倍数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="凯利公式">
 <meta property="og:url" content="http://blog.49px.com/kelly/index.html">
 <meta property="og:site_name" content="新&amp;心">
-<meta property="og:description" content="设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） 1投资比例 &#x3D; 预期收益率 &#x2F; (Rw * Rl) &#x3D; (Rw*赢的概率 - Rl*输的概率) &#x2F; (Rw * Rl)  例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 $(20.5-10.5)&#x2F;(2*1) &#x3D; 0.25$ 另：赌博中术语，赔率 &#x3D; Rw &#x2F; Rl 凯利公式的推导假设本金为W0，n次抽样的增长倍数分别为M">
+<meta property="og:description" content="设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） 1投资比例 &#x3D; 预期收益率 &#x2F; (Rw * Rl) &#x3D; (Rw*赢的概率 - Rl*输的概率) &#x2F; (Rw * Rl) 例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 \((2*0.5-1*0.5)&#x2F;(2*1) &#x3D; 0.25\) 另：赌博中术语，赔率 &#x3D; Rw &#x2F; Rl 凯利公式的推导 假设本金为W0，n次抽样的增长倍数">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2016-08-09T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-01-05T03:59:00.000Z">
+<meta property="article:modified_time" content="2020-01-08T11:30:58.186Z">
 <meta property="article:author" content="Yang Le">
 <meta property="article:tag" content="finance">
 <meta name="twitter:card" content="summary">
@@ -93,30 +93,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数）</p>
-<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">投资比例 = 预期收益率 / <span class="comment">(Rw * Rl)</span> = <span class="comment">(Rw*赢的概率 - Rl*输的概率)</span> / <span class="comment">(Rw * Rl)</span></span><br></pre></td></tr></table></figure>
-
-<p>例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 $(2<em>0.5-1</em>0.5)/(2*1) = 0.25$</p>
+        <p>设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） <figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">投资比例 = 预期收益率 / <span class="comment">(Rw * Rl)</span> = <span class="comment">(Rw*赢的概率 - Rl*输的概率)</span> / <span class="comment">(Rw * Rl)</span></span><br></pre></td></tr></table></figure></p>
+<p>例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 <span class="math inline">\((2*0.5-1*0.5)/(2*1) = 0.25\)</span></p>
 <p>另：赌博中术语，<code>赔率 = Rw / Rl</code></p>
-<h3 id="凯利公式的推导"><a href="#凯利公式的推导" class="headerlink" title="凯利公式的推导"></a>凯利公式的推导</h3><p>假设本金为W0，n次抽样的增长倍数分别为M1,M2,M3 … Mn，则总收益</p>
-<p>$$<br>W_n = W_0<em>M_1</em>M_2<em>…</em>M_n = e^{lnW_0+lnM_1+lnM_2+…+lnM_n} \ = e^{lnW_0 + n<em>E(lnM)+ o(n)}（大数定律）= e^{lnW_0} * e^{n</em>E(lnM) + o(n)} ≈ W_0 * e^{n*E(lnM)}<br>$$</p>
+<h3 id="凯利公式的推导">凯利公式的推导</h3>
+<p>假设本金为W0，n次抽样的增长倍数分别为M1,M2,M3 … Mn，则总收益</p>
+<p><span class="math display">\[W_n = W_0*M_1*M_2*…*M_n = e^{lnW_0+lnM_1+lnM_2+…+lnM_n} \\ = e^{lnW_0 + n*E(lnM)+ o(n)}（大数定律）= e^{lnW_0} * e^{n*E(lnM) + o(n)} ≈ W_0 * e^{n*E(lnM)}\]</span></p>
 <p>总收益最大化就是<code>E(lnM)</code>最大化。不妨设投资比例为f，净盈利百分比a概率p，净亏损百分比b概率q=1-p，则</p>
-<p>$E(lnM) = p<em>ln(1+af) + q</em>ln(1-bf)$，最大值当导数为0时取得，$\frac{ap}{1+af}-\frac{bq}{1-bf}=0$，得 $f = \frac{ap-bq}{ab}$</p>
+<p><span class="math inline">\(E(lnM) = p*ln(1+af) + q*ln(1-bf)\)</span>，最大值当导数为0时取得，<span class="math inline">\(\frac{ap}{1+af}-\frac{bq}{1-bf}=0\)</span>，得 <span class="math inline">\(f = \frac{ap-bq}{ab}\)</span></p>
 <p>参考：<a href="http://www.elem.com/~btilly/kelly-criterion/" target="_blank" rel="noopener">Kelly Criterion in detail</a></p>
-<hr>
-<p>设投资比例为f，n次抽样的净收益率分别为ri，净收益率均值为μ方差为σ^2，使用泰勒公式$ln(1+x)=x - x^2/2 + …$展开两次，<br>$$E(lnM) = E[ln(1+fr_i)] = E[fr_i - \frac{1}{2}f^2r_i^2 + …] ≈ E(fr_i) - E(\frac{1}{2}f^2r_i^2) = fμ - \frac{1}{2}f^2σ^2 $$<br>最大值当导数为0时取得，$μ - fσ^2 = 0$，得 $f = \frac{μ}{σ^2}$</p>
-<h3 id="凯利公式的应用"><a href="#凯利公式的应用" class="headerlink" title="凯利公式的应用"></a>凯利公式的应用</h3><p>假设市场平均市盈率水平长期而言是稳定的，即涨和跌的概率都是50%，涨幅a和跌幅b对称 (1+a)(1-b)=1，由凯利公式，x=(0.5a-0.5b)/ab=0.5，采用半仓动态再平衡。</p>
+<hr />
+<p>设投资比例为f，n次抽样的净收益率分别为ri，净收益率均值为μ方差为σ^2，使用泰勒公式<span class="math inline">\(ln(1+x)=x - x^2/2 + ...\)</span>展开两次， <span class="math display">\[E(lnM) = E[ln(1+fr_i)] = E[fr_i - \frac{1}{2}f^2r_i^2 + ...] ≈ E(fr_i) - E(\frac{1}{2}f^2r_i^2) = fμ - \frac{1}{2}f^2σ^2 \]</span> 最大值当导数为0时取得，<span class="math inline">\(μ - fσ^2 = 0\)</span>，得 <span class="math inline">\(f = \frac{μ}{σ^2}\)</span></p>
+<h3 id="凯利公式的应用">凯利公式的应用</h3>
+<p>假设市场平均市盈率水平长期而言是稳定的，即涨和跌的概率都是50%，涨幅a和跌幅b对称 (1+a)(1-b)=1，由凯利公式，x=(0.5a-0.5b)/ab=0.5，采用半仓动态再平衡。</p>
 <p>参考：<a href="http://xueqiu.com/2488148656/54804304" target="_blank" rel="noopener">基于市场平均市盈率与凯利公式的仓位控制策略</a></p>
-<hr>
+<hr />
 <p>通过<em>止盈止损线</em>将股票投资转换为连续赌博：某种信号发出算入场点，设置止盈止损线，碰到止盈止损线算出场点，用历史回测计算止盈出场和止损出场的次数，这样就知道了赢时净收益率（止盈线）、输时净收益率（止损线）、赢的概率（止盈出场数/总出场数）、输的概率（1-赢的概率）</p>
-<p>凯利公式的”本金”：是指心理能承受的损失额</p>
+<p>凯利公式的"本金"：是指心理能承受的损失额</p>
 <p>参考：<a href="https://www.joinquant.com/post/1311" target="_blank" rel="noopener">凯利公式，你用对了吗？</a></p>
 
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://blog.49px.com/kelly/" data-id="ck54ohd9g000050xm0tljfogm" class="article-share-link">分享到</a>
+        <a data-url="http://blog.49px.com/kelly/" data-id="ck558jnjm00003mxmdop1e58a" class="article-share-link">分享到</a>
       
 
       

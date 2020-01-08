@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.49px.com/kelly/</loc>
+    
+    <lastmod>2020-01-08T11:30:58.186Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.49px.com/sleep/</loc>
     
     <lastmod>2020-01-08T02:11:14.034Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://blog.49px.com/startup/</loc>
     
     <lastmod>2020-01-08T02:10:03.477Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.49px.com/kelly/</loc>
-    
-    <lastmod>2020-01-05T03:59:00.000Z</lastmod>
     
   </url>
   
