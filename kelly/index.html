@@ -6,15 +6,15 @@
   
   <title>凯利公式 | 新&amp;心</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） 1投资比例 &#x3D; 预期收益率 &#x2F; (Rw * Rl) &#x3D; (Rw*赢的概率 - Rl*输的概率) &#x2F; (Rw * Rl) 例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 \((2*0.5-1*0.5)&#x2F;(2*1) &#x3D; 0.25\) 另：赌博中术语，赔率 &#x3D; Rw &#x2F; Rl 凯利公式的推导 假设本金为W0，n次抽样的增长倍数">
+  <meta name="description" content="设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） 1投资比例 &#x3D; 预期收益率 &#x2F; (Rw * Rl) &#x3D; (Rw*赢的概率 - Rl*输的概率) &#x2F; (Rw * Rl) 例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 \((2*0.5-1*0.5)&#x2F;(2*1) &#x3D; 0.25\) 另：赌博中术语，赔率 &#x3D; Rw &#x2F; Rl ### 凯利公式的推导 假设本金为W0，n次抽样的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="凯利公式">
 <meta property="og:url" content="http://blog.49px.com/kelly/index.html">
 <meta property="og:site_name" content="新&amp;心">
-<meta property="og:description" content="设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） 1投资比例 &#x3D; 预期收益率 &#x2F; (Rw * Rl) &#x3D; (Rw*赢的概率 - Rl*输的概率) &#x2F; (Rw * Rl) 例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 \((2*0.5-1*0.5)&#x2F;(2*1) &#x3D; 0.25\) 另：赌博中术语，赔率 &#x3D; Rw &#x2F; Rl 凯利公式的推导 假设本金为W0，n次抽样的增长倍数">
+<meta property="og:description" content="设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） 1投资比例 &#x3D; 预期收益率 &#x2F; (Rw * Rl) &#x3D; (Rw*赢的概率 - Rl*输的概率) &#x2F; (Rw * Rl) 例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 \((2*0.5-1*0.5)&#x2F;(2*1) &#x3D; 0.25\) 另：赌博中术语，赔率 &#x3D; Rw &#x2F; Rl ### 凯利公式的推导 假设本金为W0，n次抽样的">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2016-08-09T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-01-08T12:28:20.748Z">
+<meta property="article:modified_time" content="2020-01-08T13:01:30.488Z">
 <meta property="article:author" content="Yang Le">
 <meta property="article:tag" content="finance">
 <meta name="twitter:card" content="summary">
@@ -95,8 +95,7 @@
       
         <p>设赢时净收益率Rw，输时净收益率Rl（Rl取绝对值，确保正数） <figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">投资比例 = 预期收益率 / <span class="comment">(Rw * Rl)</span> = <span class="comment">(Rw*赢的概率 - Rl*输的概率)</span> / <span class="comment">(Rw * Rl)</span></span><br></pre></td></tr></table></figure></p>
 <p>例如：赢的话1变3，输的话1变0，输赢概率各50%，上述就是 <span class="math inline">\((2*0.5-1*0.5)/(2*1) = 0.25\)</span></p>
-<p>另：赌博中术语，<code>赔率 = Rw / Rl</code></p>
-<h3 id="凯利公式的推导">凯利公式的推导</h3>
+<p>另：赌博中术语，<code>赔率 = Rw / Rl</code> ### 凯利公式的推导</p>
 <p>假设本金为W0，n次抽样的增长倍数分别为M1,M2,M3 … Mn，则总收益</p>
 <p><span class="math display">\[
 W_n = W_0*M_1*M_2*…*M_n = e^{lnW_0+lnM_1+lnM_2+…+lnM_n} \\ = e^{lnW_0 + n*E(lnM)+ o(n)}（大数定律）= e^{lnW_0} * e^{n*E(lnM) + o(n)} ≈ W_0 * e^{n*E(lnM)}
@@ -118,7 +117,7 @@ W_n = W_0*M_1*M_2*…*M_n = e^{lnW_0+lnM_1+lnM_2+…+lnM_n} \\ = e^{lnW_0 + n*E(
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://blog.49px.com/kelly/" data-id="ck55a63dn0000k0xmg5l2ahl9" class="article-share-link">分享到</a>
+        <a data-url="http://blog.49px.com/kelly/" data-id="ck55djino0000rvxm2l2t7klp" class="article-share-link">分享到</a>
       
 
       
